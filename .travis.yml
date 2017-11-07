@@ -4,8 +4,8 @@
   install:
     - pip install coverage
     - pip install coveralls
+    - pip install colored --upgrade
   script:
-    - python -m unittest test_rpn
     - coverage run -m unittest test_rpn
   after_success:
     - coveralls
